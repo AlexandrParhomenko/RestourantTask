@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-grey-standard-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  .scheduleWrapper {
+    margin-top: 100px;
+    background-color: var(--main-white-color);
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 1px 1px var(--main-grey-dark-color);
+    column-gap: 20px;
+    flex-direction: column;
+
+    &__title {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 2px solid var(--main-grey-dark-color);
+      padding-bottom: 10px;
+      font-size: 27px;
+      font-weight: bold;
+      column-gap: 15px;
+    }
+  }
+}
+
+.clockImg {
+  color: #A1A2A4;
+}
+
+.schedule {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.schedule__day {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid var(--main-grey-light-color);
+  justify-content: space-between;
+}
+
+.currentDay {
+  padding-left: 10px;
+  color: var(--main-green-color);
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.weekDayFont {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+}
+
+.closedDaysFont {
+  color: var(--main-grey-dark-color);
+}
+
+.keys {
+  border-bottom: 1px solid grey;
+}
